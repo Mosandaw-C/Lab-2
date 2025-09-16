@@ -1,18 +1,24 @@
 #include <stdio.h>
-// #include <math.h> Why don't we need this library?
+// #include <math.h> Because we dont will use basic operators
 
 int main()
 {
-    // declare  variable, set its value to 1
-
+    int i , j; // declared two numbers
+    printf("Write two integer bounds seperated by space");
+    scanf("%d %d", &i, &j);
+    if (i > j){
+        int k; 
+        k = j;
+        j = i;
+        i = k;
+    }
     // create a while loop that runs while the variable is less than or equal to 20
-    {
-
-        // increment the variable by 1
-
-        // print the value of the variable
-
-    } //this is the end of the body of the while loop, it keeps looping back to the while statement, while the condition is true
+    for (; i <= j; i++) {
+        // Print the current value of i
+        printf("%d\n", i);
+    } 
+    
+    //this is the end of the body of the while loop, it keeps looping back to the while statement, while the condition is true
 
     // you can put breakpoints on the closing curly brace of the while loop to see how it loops back to the while statement and checks the condition again
     // you can also put breakpoints on the increment statement to see how the variable changes each time through the loop
